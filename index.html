@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Money Mingle</title>
+
+    <link rel="shortcut icon" href="assets/dollar.png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__blur hidden"></div>
+      <div class="popup__window hidden">
+        <button class="btn btn-close"><i class="bi bi-x-lg icon"></i></button>
+        <p class="popup__heading">
+          Open your bank account in just
+          <span class="highlight">5 minutes</span>
+        </p>
+
+        <form action="#" class="signup">
+          <input
+            class="firstName"
+            id="firstName"
+            placeholder="First Name"
+            type="text"
+          />
+          <label class="label label-firstName" for="firstName"
+            >First Name</label
+          >
+          <input
+            class="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            type="text"
+          />
+          <label class="label label-lastName" for="lastName">Last Name</label>
+          <input
+            class="email"
+            id="email"
+            placeholder="Your Email"
+            type="email"
+          />
+          <label class="label label-email" for="email">Email Address</label>
+          <button class="btn btn-signup">Next step &rarr;</button>
+        </form>
+      </div>
+    </div>
+
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__header">
+          <img src="assets/dollar.png" class="nav__logo" alt="Logo" />
+          <span class="nav__heading">MONEY MINGLE</span>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link btn btn--cta" href="#section--4"
+              >Open account</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__hero">
+        <div class="hero__text">
+          <h1 class="heading-1 mb-4">
+            When <span class="highlight">banking</span> meets
+            <span class="highlight">minimalist</span>
+          </h1>
+          <p class="mb-4">A simpler banking experience for a simpler life.</p>
+          <a class="btn btn--text" href="#">Learn more &darr;</a>
+        </div>
+
+        <div class="hero__imgs">
+          <img
+            src="assets/hero_1-cropped.png"
+            class="hero__img hero__img-1"
+            alt="A calculator and a card"
+          />
+          <img
+            src="assets/hero_2.jpg"
+            class="hero__img hero__img-2"
+            alt="A growing plant"
+          />
+          <img
+            src="assets/hero_3.jpg"
+            class="hero__img hero__img-3"
+            alt="A dollar"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-features" id="section--1">
+        <h2 class="heading-2 txt-align-c">features</h2>
+        <p class="section-heading txt-align-c">
+          Everything you need in a modern bank and more.
+        </p>
+        <div class="feature">
+          <img
+            src="assets/digital.jpg"
+            alt="Money Mingle Website"
+            class="feature__img"
+          />
+          <div class="feature__detail">
+            <div class="feature__icon"><i class="bi bi-display icon"></i></div>
+            <h3 class="heading-3">100% digital bank</h3>
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              alias sint quos? Accusantium a fugiat porro reiciendis saepe
+              quibusdam debitis ducimus.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__detail">
+            <div class="feature__icon">
+              <i class="bi bi-graph-up-arrow icon"></i>
+            </div>
+            <h3 class="heading-3">Watch your money grow</h3>
+            <p class="feature__text">
+              Nesciunt quos autem dolorum voluptates cum dolores dicta fuga
+              inventore ab? Nulla incidunt eius numquam sequi iste pariatur
+              quibusdam!
+            </p>
+          </div>
+          <img
+            src="assets/grow.jpg"
+            alt="Plant in a pot"
+            class="feature__img"
+          />
+        </div>
+
+        <div class="feature">
+          <img
+            src="assets/card.jpg"
+            alt="Money Mingle Card"
+            class="feature__img"
+          />
+          <div class="feature__detail">
+            <div class="feature__icon">
+              <i class="bi bi-credit-card icon"></i>
+            </div>
+            <h3 class="heading-3">Free debit card included</h3>
+            <p class="feature__text">
+              Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+              eveniet consequatur odit quam quos possimus assumenda dicta fuga
+              inventore ab.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-operations" id="section--2">
+        <h2 class="heading-2 txt-align-c">Operations</h2>
+        <p class="section-heading txt-align-c">
+          Everything as simple as possible, but no simpler.
+        </p>
+
+        <div class="operations">
+          <div class="operation__btns">
+            <button class="operation__btn btn btn-operation__transfer">
+              01 Instant Transfers
+            </button>
+            <button class="operation__btn btn btn-operation__loan">
+              02 Instant Loans
+            </button>
+            <button class="operation__btn btn btn-operation__closing">
+              03 Instant Closing
+            </button>
+          </div>
+          <div class="operation operation__transfer hidden operation--active">
+            <div class="operation__icon">
+              <i class="bi bi-upload icon"></i>
+            </div>
+            <div class="operation__detail">
+              <h3 class="heading-3">
+                Transfer money to anyone, instantly! No fees, no BS.
+              </h3>
+              <p class="operation__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+
+          <div class="operation operation__loan hidden">
+            <div class="operation__icon">
+              <i class="bi bi-house-door icon"></i>
+            </div>
+            <div class="operation__detail">
+              <h3 class="heading-3">
+                Buy a home or make your dreams come true, with instant loans.
+              </h3>
+              <p class="operation__text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+
+          <div class="operation operation__closing hidden">
+            <div class="operation__icon">
+              <i class="bi bi-person-x-fill icon"></i>
+            </div>
+            <div class="operation__detail">
+              <h3 class="heading-3">
+                No longer need your account? No problem! Close it instantly.
+              </h3>
+              <p class="operation__text">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="section--3">
+        <h2 class="heading-2 txt-align-c">Not sure yet?</h2>
+        <p class="section-heading txt-align-c">
+          Millions of Users are already making their lifes simpler.
+        </p>
+
+        <div class="testimonials">
+          <div class="testimonial">
+            <h3 class="heading-3 testimonial__header">
+              Best financial decision ever!
+            </h3>
+            <p class="testimonial__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium quas quisquam non? Quas voluptate nulla minima
+              deleniti optio ullam nesciunt, numquam corporis et asperiores
+              laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus
+              id alias reiciendis, perferendis facere pariatur dolore veniam
+              autem esse non voluptatem saepe provident nihil molestiae.
+            </p>
+            <div class="testimonial__author">
+              <img
+                src="assets/user-1.jpg"
+                alt=""
+                class="testimonial__author__img"
+              />
+              <div class="testimonial__author__details">
+                <p class="testimonial__author__name">Aarav Lynn</p>
+                <p class="testimonial__author__place">San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <h3 class="heading-3 testimonial__header">
+              The last step to becoming a complete minimalist
+            </h3>
+            <p class="testimonial__text">
+              Quisquam itaque deserunt ullam, quia ea repellendus provident,
+              ducimus neque ipsam modi voluptatibus doloremque, corrupti
+              laborum. Incidunt numquam perferendis veritatis neque repellendus.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+              deserunt exercitationem deleniti.
+            </p>
+            <div class="testimonial__author">
+              <img
+                src="assets/user-2.jpg"
+                alt=""
+                class="testimonial__author__img"
+              />
+              <div class="testimonial__author__details">
+                <p class="testimonial__author__name">Miyah Miles</p>
+                <p class="testimonial__author__place">London, UK</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <h3 class="heading-3 testimonial__header">
+              Finally free from old-school banks
+            </h3>
+            <p class="testimonial__text">
+              Debitis, nihil sit minus suscipit magni aperiam vel tenetur
+              incidunt commodi architecto numquam omnis nulla autem,
+              necessitatibus blanditiis modi similique quidem. Odio aliquam
+              culpa dicta beatae quod maiores ipsa minus consequatur error sunt,
+              deleniti saepe aliquid quos inventore sequi. Necessitatibus id
+              alias reiciendis, perferendis facere.
+            </p>
+            <div class="testimonial__author">
+              <img
+                src="assets/user-3.jpg"
+                alt=""
+                class="testimonial__author__img"
+              />
+              <div class="testimonial__author__details">
+                <p class="testimonial__author__name">Francisco Gomes</p>
+                <p class="testimonial__author__place">Lisbon, Portugal</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-prev">
+            <i class="bi bi-arrow-left icon"></i>
+          </button>
+          <button class="btn btn-next">
+            <i class="bi bi-arrow-right icon"></i>
+          </button>
+
+          <div class="dots">
+            <div class="dot dot-1 dot-active"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="section--4">
+        <p class="cta-text">
+          The best day to join Money Mingle was one year ago. The second best is
+          today!
+        </p>
+        <button class="btn btn--cta">Open your free account today!</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="nav__link">
+          <a href="">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="">Pricing</a>
+        </li>
+        <li class="nav__link">
+          <a href="">Terms of use</a>
+        </li>
+        <li class="nav__link">
+          <a href="">Privacy Policy</a>
+        </li>
+        <li class="nav__link">
+          <a href="">Careers</a>
+        </li>
+        <li class="nav__link">
+          <a href="">Blog</a>
+        </li>
+        <li class="nav__link">
+          <a href="">Contact Us</a>
+        </li>
+      </ul>
+      <img src="assets/dollar.png" class="footer__logo" alt="Footer Logo" />
+      <p class="footer__text">
+        © Copyright by <span>Piyush Kumar</span>. Use for learning or your
+        portfolio. Don't use to teach. Don't claim as your own product.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

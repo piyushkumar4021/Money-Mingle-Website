@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  color: #444;
+  background-color: #f3f3f3;
+  font-size: 1.8rem;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  transform: scale(1.05) skewX(-10deg);
+
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: linear-gradient(to top left, #39b385, #9be15d);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

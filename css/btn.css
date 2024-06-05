@@ -1,0 +1,110 @@
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.btn--text {
+  color: #5ec576;
+  border-bottom: 1px solid #5ec576;
+  font-weight: 500;
+
+  transition: border-bottom 0.2s, color 0.3s;
+}
+
+.btn--text:hover {
+  border-bottom: 1px solid transparent;
+  color: #52a565;
+}
+
+.btn--cta {
+  background-color: #5ec576;
+  padding: 1rem 3rem;
+  transition: background-color 0.3s;
+  border-radius: 100px;
+}
+
+.btn--cta:hover {
+  background-color: #49bd64;
+}
+
+/* Operation Section Btns */
+.operation__btn {
+  padding: 1.5rem 3.5rem;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+}
+
+.btn-operation__transfer {
+  background-color: #ffcb03;
+}
+
+.btn-operation__transfer:hover {
+  background-color: #e8b800;
+}
+
+.btn-operation__loan {
+  background-color: #69d582;
+}
+
+.btn-operation__loan:hover {
+  background-color: #49bd64;
+}
+
+.btn-operation__closing {
+  background-color: #fd646b;
+}
+
+.btn-operation__closing:hover {
+  background-color: #ff363e;
+}
+
+/* Testimonials */
+.btn-prev,
+.btn-next {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-prev {
+  left: 0;
+}
+
+.btn-next {
+  right: 0;
+}
+
+.btn-prev .icon,
+.btn-next .icon {
+  font-size: 2.4rem;
+}
+
+/* Form */
+.btn-signup {
+  background-color: #5ec576;
+  padding: 1rem 3rem;
+  transition: background-color 0.3s;
+  border-radius: 100px;
+  font-size: 2rem;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+
+  right: 3%;
+  top: 3%;
+}
+
+.btn-close .icon {
+  color: #333;
+  font-size: 2.8rem;
+}

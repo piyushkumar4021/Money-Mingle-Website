@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 6rem 0;
+
+  position: sticky;
+}
+
+.nav__header {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 70px;
+}
+
+.nav__heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #1fa23d;
+}
+
+.nav__links {
+  list-style: none;
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
