@@ -59,9 +59,24 @@
   z-index: 1;
 }
 
+.operation__btn--active {
+  transform: translateY(-0.75rem);
+}
+
 .operation {
   background-color: #fff;
   padding: 7rem;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 3rem;
+  transform: translateY(-2.2rem);
+
+  position: absolute;
 }
 
 .operation .heading-3 {
@@ -70,19 +85,6 @@
 
 .operation__text {
   color: #777;
-}
-
-.operation__transfer,
-.operation__loan,
-.operation__closing {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 3rem;
-  transform: translateY(-2.2rem);
-
-  position: absolute;
-
-  transition: opacity 1s ease-out;
 }
 
 .operation--active {

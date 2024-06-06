@@ -182,17 +182,27 @@
 
         <div class="operations">
           <div class="operation__btns">
-            <button class="operation__btn btn btn-operation__transfer">
-              01 Instant Transfers
-            </button>
-            <button class="operation__btn btn btn-operation__loan">
-              02 Instant Loans
-            </button>
-            <button class="operation__btn btn btn-operation__closing">
+            <button
+              data-tab="1"
+              class="operation__btn btn btn-operation__transfer operation__btn--active"
+            >
+              01 Instant Transfers</button
+            ><button
+              data-tab="2"
+              class="operation__btn btn btn-operation__loan"
+            >
+              02 Instant Loans</button
+            ><button
+              data-tab="3"
+              class="operation__btn btn btn-operation__closing"
+            >
               03 Instant Closing
             </button>
           </div>
-          <div class="operation operation__transfer hidden operation--active">
+
+          <div
+            class="operation operation--1 operation__transfer hidden operation--active"
+          >
             <div class="operation__icon">
               <i class="bi bi-upload icon"></i>
             </div>
@@ -209,7 +219,7 @@
             </div>
           </div>
 
-          <div class="operation operation__loan hidden">
+          <div class="operation operation--2 operation__loan">
             <div class="operation__icon">
               <i class="bi bi-house-door icon"></i>
             </div>
@@ -226,7 +236,7 @@
             </div>
           </div>
 
-          <div class="operation operation__closing hidden">
+          <div class="operation operation--3 operation__closing">
             <div class="operation__icon">
               <i class="bi bi-person-x-fill icon"></i>
             </div>
