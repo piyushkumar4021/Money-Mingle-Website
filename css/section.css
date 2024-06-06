@@ -4,9 +4,13 @@
   margin-bottom: 6rem;
 }
 
+.section {
+  padding: 15rem 10rem;
+  transition: all 0.4s;
+}
+
 /* Features Section */
 .section-features {
-  padding: 15rem 10rem;
   border-bottom: 1px solid #ccc;
 }
 
@@ -23,6 +27,7 @@
 
 .feature__img {
   width: 100%;
+  transition: filter 0.4s;
 }
 
 .feature__detail {
@@ -39,7 +44,6 @@
 
 /* Operations Section */
 .section-operations {
-  padding: 15rem 10rem;
   display: grid;
   border-bottom: 1px solid #ccc;
 }
@@ -96,7 +100,6 @@
 
 /* Testimonials Section */
 .section-testimonials {
-  padding: 15rem 10rem;
   border-bottom: 1px solid #ccc;
   display: grid;
 }
@@ -175,7 +178,6 @@
 
 /* CTA Section */
 .section-cta {
-  padding: 15rem 10rem;
   display: grid;
   justify-items: center;
 }
@@ -197,22 +199,6 @@
   padding: 15rem 10rem;
   display: grid;
   justify-items: center;
-}
-
-.footer__nav {
-  max-width: 110rem;
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem 5rem;
-
-  margin-bottom: 5rem;
-}
-
-.footer__nav .nav__link a {
-  color: #fff;
 }
 
 .footer__logo {

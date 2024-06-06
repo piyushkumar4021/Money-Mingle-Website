@@ -31,3 +31,12 @@
 .pos-abs {
   position: absolute;
 }
+
+.hide-section {
+  opacity: 0;
+  transform: translateY(10rem);
+}
+
+.lazy-loading {
+  filter: blur(15px);
+}

@@ -2,9 +2,8 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 1rem 6rem 0;
-
-  position: sticky;
+  padding: 1.5rem 6rem;
+  width: 100%;
 }
 
 .nav__header {
@@ -30,4 +29,29 @@
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
+}
+
+.nav__link {
+  transition: opacity 0.3s;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Footer nav */
+.footer .nav__links {
+  max-width: 110rem;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 5rem;
+
+  margin-bottom: 5rem;
+}
+
+.footer .nav__link {
+  color: #f3f3f3;
 }
