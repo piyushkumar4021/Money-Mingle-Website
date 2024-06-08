@@ -152,7 +152,7 @@ const sectionObserver = new IntersectionObserver(sectionAnimate, {
 
 sections.forEach((section) => {
   sectionObserver.observe(section);
-  section.classList.add("hide-section");
+  // section.classList.add("hide-section");
 });
 
 // Images lazy loading
@@ -182,3 +182,89 @@ featureImgs.forEach((img) => {
   lazyLoading.observe(img);
   img.classList.add("lazy-loading");
 });
+
+// Testimonial slider
+const slider = () => {
+  const testimonials = document.querySelectorAll(".testimonial");
+  const btnNext = document.querySelector(".btn-next");
+  const btnPrev = document.querySelector(".btn-prev");
+  const dots = document.querySelector(".dots");
+
+  const maxTestimonial = testimonials.length;
+  let currTestimonial = 0;
+
+  const goToTestimonial = (goTo) => {
+    testimonials.forEach((t, i) => {
+      t.style.transform = `translateX(${100 * (i - goTo)}%)`;
+    });
+  };
+
+  const createDots = () => {
+    testimonials.forEach((_, i) => {
+      // dots.innerHTML += `<div class="dots__dot" data-testimonial="${i}"></div>`;
+
+      dots.insertAdjacentHTML(
+        "beforeend",
+        `<div class="dots__dot" data-testimonial="${i}"></div>`
+      );
+    });
+  };
+
+  const activeDot = (t) => {
+    document.querySelectorAll(".dots__dot").forEach((dot) => {
+      dot.classList.remove("dots__dot--active");
+    });
+    document
+      .querySelector(`.dots__dot[data-testimonial="${t}"]`)
+      .classList.add("dots__dot--active");
+  };
+
+  const initSlider = () => {
+    goToTestimonial(0);
+    createDots();
+    activeDot(0);
+  };
+
+  initSlider();
+
+  const nextTestimonial = () => {
+    if (currTestimonial === maxTestimonial - 1) {
+      currTestimonial = 0;
+    } else {
+      currTestimonial++;
+    }
+
+    goToTestimonial(currTestimonial);
+    activeDot(currTestimonial);
+  };
+
+  const prevTestimonial = () => {
+    if (currTestimonial === 0) {
+      currTestimonial = maxTestimonial - 1;
+    } else {
+      currTestimonial--;
+    }
+
+    activeDot(currTestimonial);
+    goToTestimonial(currTestimonial);
+  };
+
+  btnNext.addEventListener("click", nextTestimonial);
+  btnPrev.addEventListener("click", prevTestimonial);
+
+  dots.addEventListener("click", (e) => {
+    if (e.target.classList.contains("dots__dot")) {
+      currTestimonial = +e.target.dataset.testimonial;
+
+      goToTestimonial(currTestimonial);
+      activeDot(currTestimonial);
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") nextTestimonial();
+    if (e.key === "ArrowLeft") prevTestimonial();
+  });
+};
+
+slider();

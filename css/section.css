@@ -110,21 +110,31 @@
   justify-self: center;
 
   position: relative;
+  overflow: hidden;
 }
 
 .testimonial {
   max-width: 110rem;
-  padding: 0 15rem;
+  padding: 0 10rem;
+
+  position: absolute;
+  top: 0;
+
+  transition: transform 0.5s;
+}
+
+.testimonial::before {
+  content: "\201D";
+  font-size: 15rem;
+  color: #49bd64;
+
+  position: absolute;
+  top: -20%;
+  left: 3%;
 }
 
 .testimonial__header {
-  margin-bottom: -2rem;
-}
-
-.testimonial__header::before {
-  content: "\201D";
-  font-size: 10rem;
-  color: #49bd64;
+  margin-bottom: 2rem;
 }
 
 .testimonial__text {
@@ -154,25 +164,29 @@
   color: #888;
 }
 
+.testimonial--active {
+  position: relative;
+}
+
 .dots {
-  display: grid;
-  column-gap: 2rem;
-  grid-template-columns: repeat(3, max-content);
+  display: flex;
   justify-content: center;
+  column-gap: 2rem;
 
   margin-top: 5rem;
 }
 
-.dot {
-  width: 1rem;
-  height: 1rem;
+.dots__dot {
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: #bbb;
   border-radius: 100%;
 
   transition: background-color 0.4s;
+  cursor: pointer;
 }
 
-.dot-active {
+.dots__dot--active {
   background-color: #888;
 }
 
