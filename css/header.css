@@ -52,3 +52,40 @@
   top: 50%;
   transform: translateY(-35%);
 }
+
+@media screen and (max-width: 65.625em) {
+  .hero__img-1 {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .header__hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .hero__text {
+    order: 1;
+  }
+
+  .hero__img {
+    width: 25rem;
+  }
+
+  .hero__img-1 {
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero__img-2 {
+    right: 13%;
+    top: 67%;
+  }
+
+  .hero__img-3 {
+    top: 67%;
+    left: 13%;
+  }
+}

@@ -268,3 +268,29 @@ const slider = () => {
 };
 
 slider();
+
+const navMenu = document.querySelector(".nav__links--menu");
+const navClose = document.querySelector(".nav__links--close");
+const headerLinks = document.querySelector(".nav .nav__links");
+
+const hideOrShow = (ele, p) => {
+  ele.style.opacity = String(p);
+  ele.style.pointerEvents = p ? "all" : "none";
+  ele.style.visibility = p ? "visible" : "hidden";
+};
+
+navMenu.addEventListener("click", () => {
+  navMenu.style.opacity = "0";
+  navMenu.style.pointerEvents = "none";
+
+  hideOrShow(headerLinks, 1);
+
+  navClose.classList.remove("hidden");
+});
+navClose.addEventListener("click", () => {
+  navMenu.style.opacity = "1";
+  navClose.classList.add("hidden");
+  navMenu.style.pointerEvents = "all";
+
+  hideOrShow(headerLinks, 0);
+});
